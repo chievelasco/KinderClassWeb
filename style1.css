@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root{
+  --color-default:#297582;
+  --color-second:#277699;
+  --color-white:#fff;
+  --color-body:#E9F8FF;
+  --color-light:#e0e0e0;
+  --color-orange:#FFD9CE;
+}
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  min-height: 100vh;
+}
+
+
+/*  START HOME SECTION CSS */
+
+.home-section .text{
+  display: inline-block;
+  color:var(--color-default);
+  font-size: 25px;
+  font-weight: 500;
+  /* margin: 18px; */
+}
+
+.home-section .container h1{
+  margin-left: 15px;
+}
+
+/* PERFORMANCE TRACKER STARTS */
+
+/*ADDED BY CHIENIE*/
+
+/* Float TOPIC WORKSHEET AND ACTIVITIES columns side by side */
+.exercises_pt {
+  float: left;
+  width: 33%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, 0 -5pxdue to padding */
+.weekly_pt {
+  margin:0 auto;
+  text-align: center;
+}
+
+/* Clear floats after the columns(exercises_pt) */
+.weekly_pt:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .exercises_pt {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the exercise container */
+.weekly_container {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  margin-top: 10px;
+  border-radius: 20px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.exercises_container {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  border: 1px solid #297582;
+  border-radius: 30px;
+}
+.exercises_container:hover{
+  background: #A1CCD1;
+  color: #41444B;
+  transition: 0.5s;
+}
+.pt_button{
+  width: 100%;
+  margin-top: 8px;
+  padding: 7px;
+  cursor: pointer;
+  border-radius: 20px;
+  background: transparent;
+  border: 1px solid #297582;
+}
+.pt_button a {
+    text-decoration: none;
+    color: #383838;
+}
+.pt_button:hover{
+  background: #A1CCD1;
+  color: #41444B;
+  transition: 0.5s;
+}
+.addweek_button{
+  width: 50px;
+  margin-top: 8px;
+  padding: 7px;
+  cursor: pointer;
+  border-radius: 20px;
+  background: transparent;
+  font-size: xx-large;
+  text-align: center;
+}
+.addweek_button a {
+    text-decoration: none;
+    color: #383838;
+}
+.addweek_button:hover{
+  background: #A1CCD1;
+  color: #41444B;
+  transition: 0.5s;
+}
+.progressContainer {
+  background-color: #73A9AD;
+  border-radius: 20px;
+  height: 20px;
+  width: 300px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.progressRate {
+  display: flex;
+  justify-content: center;
+  background-image: repeating-linear-gradient(to left, #FFD89C, #F1C27B, #E9B384);
+  box-shadow: 0 5px 5px -6px #FFD89C, 0 3px 7px #F1C27B;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 15px;
+  height: 100%;
+  width: 0;
+  transition: 1s ease 0.3s;
+}
+
+/*for the FILE buttons*/
+.exercises_container a {
+  text-decoration: none;
+  color:#297582;
+}
+.exercises_container:hover{
+  background: #A1CCD1;
+  color: #41444B;
+  transition: 0.5s;
+}
